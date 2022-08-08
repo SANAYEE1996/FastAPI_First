@@ -17,7 +17,9 @@ def Name():
 def Name():
     return FileResponse('index.html')
 
-
+@app.get("/game")
+def Game():
+    return FileResponse('wordle.html')
 
 @app.post("/send")
 def Name(data : PersonProfile):
